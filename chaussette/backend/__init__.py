@@ -53,6 +53,11 @@ if not PY3:
     except ImportError:
         pass
 
+    try:
+        from chaussette.backend import _bjoern
+        _backends['bjoern'] = _bjoern.Server
+    except ImportError:
+        pass
 
 def register(name, server):
     _backends[name] = server

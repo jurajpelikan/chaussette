@@ -7,7 +7,7 @@ import sys
 from chaussette.backend import backends
 
 
-PY2 = ['eventlet', 'fastgevent', 'gevent',
+PY2 = ['bjoern', 'eventlet', 'fastgevent', 'gevent',
        'geventwebsocket', 'geventws4py', 'meinheld',
        'socketio', 'waitress',
        'wsgiref']
